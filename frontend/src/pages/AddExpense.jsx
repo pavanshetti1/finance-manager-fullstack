@@ -3,8 +3,6 @@ import toast from 'react-hot-toast';
 import { useNavigate } from 'react-router-dom'
 import Layout from '../components/Layout';
 import axiosInstance from '../config/axios';
-import axios from 'axios';
-
 const AddExpense = () => {
     const [formData, setFormData] = useState({
         date: '',

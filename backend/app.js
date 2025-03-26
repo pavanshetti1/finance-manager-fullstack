@@ -12,18 +12,18 @@ import aiRoutes from './routes/ai.route.js';
 const app = express();
 const PORT = process.env.PORT;
 
-
+app.use(cors({
+  origin: process.env.FRONTEND_URL,
+  credentials: true,
+  allowedHeaders: ['Content-Type', 'Authorization', 'Accept'],
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],
+}));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
 connectDB();
 
-app.use(cors({
-    origin: process.env.FRONTEND_URL,
-    credentials: true,
-    allowedHeaders: ['Content-Type', 'Authorization', 'Accept'],
-    methods: ['GET', 'POST', 'PUT', 'DELETE'],
-}));
+
 
 
 app.use("/api", authRoutes);

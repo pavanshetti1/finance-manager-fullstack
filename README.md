@@ -41,7 +41,7 @@ finance-manager/
 │   ├── middleware/        # Auth Middleware <br>
 │   ├── config/            # Database & Env Configs <br>
 │   ├── server.js          # Main Backend Server<br>
-│
+│<br>
 │── frontend/              # Frontend (React, Tailwind, Vite) <br>
 │   ├── src/ <br>
 │   │   ├── components/    # Reusable UI Components <br>
@@ -50,7 +50,7 @@ finance-manager/
 │   │   ├── services/      # API Calls (Axios) <br>
 │   │   ├── App.jsx        # Main React App <br>
 │   ├── public/            # Static Files (Icons, Manifest) <br>
-│
+│<br>
 │── .env                   # Environment Variables <br>
 │── README.md              # Project Documentation <br>
 
@@ -93,21 +93,22 @@ npm install
 VITE_BACKEND_URL=https://finance-manager-fullstack.onrender.com
 
 #### 🔹 Run the frontend
+```sh
 npm run dev
+```
 
 ## 📜 License
 This project is open-source and free to use. Contributions are welcome! 😊
 
 ## 💡 Contributing
 Pull requests are welcome! Please follow these steps:
-
 1️⃣ Fork the repo <br>
 2️⃣ Create a new branch (git checkout -b feature-branch) <br>
 3️⃣ Make your changes & commit (git commit -m "Added new feature") <br>
 4️⃣ Push to the branch (git push origin feature-branch) <br>
 5️⃣ Create a Pull Request on GitHub <br>
 
-💬 Feedback & Support
+##💬 Feedback & Support
 If you have any issues or suggestions, feel free to: <br>
 📧 Email me: pavanshetti12@gmail.com <br>
 📢 Create an issue on GitHub <br>

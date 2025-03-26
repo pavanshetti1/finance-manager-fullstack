@@ -35,24 +35,24 @@ This project helps users **track expenses**, **visualize financial insights**, a
 
 ## 📂 **Project Structure**  
 finance-manager/
-│── backend/               # Backend (Node.js, Express, MongoDB)
-│   ├── models/            # Mongoose Models (User, Expense)
-│   ├── routes/            # API Routes
-│   ├── middleware/        # Auth Middleware
-│   ├── config/            # Database & Env Configs
-│   ├── server.js          # Main Backend Server
+│── backend/               # Backend (Node.js, Express, MongoDB) <br>
+│   ├── models/            # Mongoose Models (User, Expense) <br>
+│   ├── routes/            # API Routes<br>
+│   ├── middleware/        # Auth Middleware <br>
+│   ├── config/            # Database & Env Configs <br>
+│   ├── server.js          # Main Backend Server<br>
 │
-│── frontend/              # Frontend (React, Tailwind, Vite)
-│   ├── src/
-│   │   ├── components/    # Reusable UI Components
-│   │   ├── pages/         # Dashboard, Analytics, Expenses
-│   │   ├── context/       # Global State Management (Auth)
-│   │   ├── services/      # API Calls (Axios)
-│   │   ├── App.jsx        # Main React App
-│   ├── public/            # Static Files (Icons, Manifest)
+│── frontend/              # Frontend (React, Tailwind, Vite) <br>
+│   ├── src/ <br>
+│   │   ├── components/    # Reusable UI Components <br>
+│   │   ├── pages/         # Dashboard, Analytics, Expenses <br>
+│   │   ├── context/       # Global State Management (Auth) <br>
+│   │   ├── services/      # API Calls (Axios) <br>
+│   │   ├── App.jsx        # Main React App <br>
+│   ├── public/            # Static Files (Icons, Manifest) <br>
 │
-│── .env                   # Environment Variables
-│── README.md              # Project Documentation
+│── .env                   # Environment Variables <br>
+│── README.md              # Project Documentation <br>
 
 # Project Documentation
 
@@ -101,14 +101,14 @@ This project is open-source and free to use. Contributions are welcome! 😊
 ## 💡 Contributing
 Pull requests are welcome! Please follow these steps:
 
-1️⃣ Fork the repo
-2️⃣ Create a new branch (git checkout -b feature-branch)
-3️⃣ Make your changes & commit (git commit -m "Added new feature")
-4️⃣ Push to the branch (git push origin feature-branch)
-5️⃣ Create a Pull Request on GitHub
+1️⃣ Fork the repo <br>
+2️⃣ Create a new branch (git checkout -b feature-branch) <br>
+3️⃣ Make your changes & commit (git commit -m "Added new feature") <br>
+4️⃣ Push to the branch (git push origin feature-branch) <br>
+5️⃣ Create a Pull Request on GitHub <br>
 
 💬 Feedback & Support
-If you have any issues or suggestions, feel free to:
-📧 Email me: pavanshetti12@gmail.com
-📢 Create an issue on GitHub
-🙌 Happy Coding! 🚀🔥
+If you have any issues or suggestions, feel free to: <br>
+📧 Email me: pavanshetti12@gmail.com <br>
+📢 Create an issue on GitHub <br>
+🙌 Happy Coding! 🚀🔥 

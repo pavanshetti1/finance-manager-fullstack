@@ -65,28 +65,28 @@ finance-manager/
 git clone https://github.com/your-username/your-repo-link.git
 cd finance-manager
 ```
-# 2️⃣ Backend Setup
-# 📁 Navigate to the backend folder
+### 2️⃣ Backend Setup
+#### 📁 Navigate to the backend folder
 cd backend
 npm install
 
-# 🔹 Create a .env file inside backend/
+#### 🔹 Create a .env file inside backend/
 MONGO_URI=your-mongodb-connection-url
 JWT_SECRET=your-secret-key
 FRONTEND_URL=https://financed-manager.netlify.app
 
-# 🔹 Run the backend
+#### 🔹 Run the backend
 npm run dev
 
-# 3️⃣ Frontend Setup
-# 📁 Navigate to the frontend folder
+### 3️⃣ Frontend Setup
+#### 📁 Navigate to the frontend folder
 cd frontend
 npm install
 
-# 🔹 Create a .env file inside frontend/
+#### 🔹 Create a .env file inside frontend/
 VITE_BACKEND_URL=https://finance-manager-fullstack.onrender.com
 
-# 🔹 Run the frontend
+#### 🔹 Run the frontend
 npm run dev
 
 ## 📜 License

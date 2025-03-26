@@ -101,7 +101,7 @@ npm run dev
 This project is open-source and free to use. Contributions are welcome! 😊
 
 ## 💡 Contributing
-Pull requests are welcome! Please follow these steps:
+Pull requests are welcome! Please follow these steps:<br>
 1️⃣ Fork the repo <br>
 2️⃣ Create a new branch (git checkout -b feature-branch) <br>
 3️⃣ Make your changes & commit (git commit -m "Added new feature") <br>

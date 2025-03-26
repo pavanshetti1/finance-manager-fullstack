@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import {  Route, Routes } from 'react-router-dom';
 import {Toaster} from 'react-hot-toast';
 import Login from './pages/Login';
 import Signup from './pages/Signup';
@@ -16,7 +16,7 @@ const App = () => {
    <>
       <Toaster position='top-right' reverseOrder={false} />
       <AuthProvider>
-        <Router>
+        
           <Routes>
             <Route path="/" element={<Login />} />
             <Route path="/signup" element={<Signup />} />
@@ -28,7 +28,6 @@ const App = () => {
               <Route path="/expense/add" element={<AddExpense />} />
             </Route>
           </Routes>
-        </Router>
       </AuthProvider>
    </>
   )

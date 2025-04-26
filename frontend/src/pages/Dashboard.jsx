@@ -7,7 +7,7 @@ import { motion } from 'framer-motion';
 
 
 const Dashboard = () => {
-  const { user, loading } = useAuth();
+  const { user, loading:authLoading } = useAuth();
   const [expenses, setExpenses] = useState([]);
   const [filteredExpenses, setFilteredExpenses] = useState([]);
   const [categories, setCategories] = useState([]);
@@ -16,7 +16,7 @@ const Dashboard = () => {
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
-    if (!loading && !user) {
+    if (!authLoading && !user) {
       navigate("/login");
     }
     const fetchStats = async () => {
@@ -37,7 +37,7 @@ const Dashboard = () => {
     }
    
     fetchStats();
-  }, [])
+  }, [authLoading])
 
   //function to filter expenses
   useEffect(() => {
@@ -59,6 +59,9 @@ const Dashboard = () => {
 
   }, [selectedCategory, dateRange, expenses]);
   
+  if (authLoading) {
+    return <p>Loading...</p>; // Show loading spinner or text while checking auth
+  }
 
   if (loading) return <p className="text-gray-500 animate-pulse">Loading expenses...</p>;
 

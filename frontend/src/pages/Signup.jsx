@@ -1,7 +1,7 @@
 import React, { use, useState } from 'react'
 import axiosInstance from '../config/axios';
 import toast from 'react-hot-toast';
-import {useNavigate} from 'react-router-dom';
+import {useNavigate, Link} from 'react-router-dom';
 
 const Signup = () => {
 
@@ -75,7 +75,7 @@ const Signup = () => {
           </button>
         </form>
         <p className="text-sm text-center mt-2">
-          Already have an account? <a href="/" className="text-blue-500">Login</a>
+          Already have an account? <Link href="/" className="text-blue-500">Login</Link>
         </p>
       </div>
     </div>

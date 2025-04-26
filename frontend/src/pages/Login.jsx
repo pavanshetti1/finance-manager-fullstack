@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { useNavigate } from 'react-router-dom'
+import { useNavigate,Link } from 'react-router-dom'
 import axiosInstance from '../config/axios'
 import { toast } from 'react-hot-toast'
 
@@ -64,7 +64,7 @@ const Login = () => {
                     </button>
                 </form>
                 <p className="text-sm text-center mt-2">
-                    Don't have an account? <a href="/signup" className="text-blue-500">Sign up</a>
+                    Don't have an account? <Link href="/signup" className="text-blue-500">Sign up</Link>
                 </p>
             </div>
         </div>

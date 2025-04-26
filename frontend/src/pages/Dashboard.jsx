@@ -7,7 +7,7 @@ import { motion } from 'framer-motion';
 
 
 const Dashboard = () => {
-  const { user } = useAuth();
+  const { user, loading } = useAuth();
   const [expenses, setExpenses] = useState([]);
   const [filteredExpenses, setFilteredExpenses] = useState([]);
   const [categories, setCategories] = useState([]);
@@ -16,6 +16,9 @@ const Dashboard = () => {
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
+    if (!loading && !user) {
+      navigate("/login");
+    }
     const fetchStats = async () => {
       try {
         setLoading(true);
